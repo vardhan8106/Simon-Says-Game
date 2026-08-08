@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Echo — a Simon Says game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+  <div class="brand">
+    <h1>echo<span>·</span></h1>
+    <p>repeat the pattern</p>
+  </div>
+
+  <div class="board" id="board">
+    <button class="pad green"  data-color="green"  aria-label="green pad"></button>
+    <button class="pad red"    data-color="red"    aria-label="red pad"></button>
+    <button class="pad yellow" data-color="yellow" aria-label="yellow pad"></button>
+    <button class="pad blue"   data-color="blue"   aria-label="blue pad"></button>
+    <div class="hub">
+      <div class="score" id="score">00</div>
+      <div class="label" id="hubLabel">best 00</div>
+    </div>
+  </div>
+
+  <div class="status" id="status">press start to begin</div>
+  <button class="start-btn" id="startBtn">start</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
